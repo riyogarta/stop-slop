@@ -53,6 +53,12 @@ Rate 1-10 on each dimension:
 
 Below 35/50: revise.
 
+## Bahasa Indonesia
+
+Indonesian adaptation lives in [`id/`](id/SKILL.md). It is not a literal translation: it adds patterns specific to AI-written Indonesian (translationese such as "di mana" / "yang mana", "melakukan pengecekan"), relaxes the passive-voice ban (the di- passive is normal Indonesian), and drops the Wh- starter rule.
+
+Versi bahasa Indonesia ada di folder [`id/`](id/SKILL.md). Pasang folder itu sebagai skill, atau tempel isi `id/SKILL.md` ke system prompt.
+
 ## Author
 
 [Hardik Pandya](https://hvpandya.com)
