@@ -136,10 +136,21 @@ Dalam bahasa Indonesia, pasif di- adalah bentuk normal. Jangan dilarang. Ubah ha
 | Setiap daftar berisi tiga | Pakai dua, satu, atau empat sesuai isi |
 | Pertanyaan langsung dijawab sendiri | Buang pertanyaannya |
 | Setiap paragraf ditutup kalimat pendek menohok | Variasikan penutup |
-| Em dash (—) | Koma, titik, atau titik dua |
+| Em dash (—) | Dilarang total. Lihat bagian Em Dash di bawah |
 | Tumpukan kalimat pendek | Gabungkan sebagian |
 | "Tidak selalu. Tidak sempurna." | Keraguan yang menyamar jadi penenang |
 | Paragraf dibuka "Jadi, ..." | Mulai dengan isi |
+
+## Em Dash
+
+Dilarang total, tanpa pengecualian. Larangan ini juga berlaku untuk tanda pisah pendek (–) dan dua strip (--) yang dipakai sebagai jeda.
+
+| Fungsi | Ganti dengan | Sebelum | Sesudah |
+|--------|--------------|---------|---------|
+| Sisipan keterangan | Koma atau tanda kurung | "Tim itu — yang baru dibentuk — sudah jalan." | "Tim itu, yang baru dibentuk, sudah jalan." |
+| Penjelasan atau rincian | Titik dua | "Masalahnya satu — biaya." | "Masalahnya satu: biaya." |
+| Jeda dramatis | Titik, atau hapus | "Hasilnya cepat — dan murah." | "Hasilnya cepat dan murah." |
+| Rentang angka | Tanda hubung atau "sampai" | "2.000–3.000 km" | "2.000-3.000 km" |
 
 ## Pola Kata
 

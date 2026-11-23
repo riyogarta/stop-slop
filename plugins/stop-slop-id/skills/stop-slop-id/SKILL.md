@@ -30,11 +30,13 @@ Buang keduanya.
 
 7. **Sebut pelakunya.** Benda mati tidak bertindak seperti manusia: "keputusan itu lahir", "budaya bergeser", "pasar menghukum". Sebut siapa yang memutuskan atau mengubah.
 
-8. **Variasikan ritme.** Tidak setiap daftar berisi tiga. Tidak setiap paragraf ditutup kalimat pendek yang menohok. Em dash (—) jarang dipakai dalam tulisan Indonesia; pakai koma, titik, atau titik dua.
+8. **Variasikan ritme.** Tidak setiap daftar berisi tiga. Tidak setiap paragraf ditutup kalimat pendek yang menohok.
 
 9. **Percayai pembaca.** Tanpa ringkasan ulang di akhir, tanpa wejangan, tanpa "semoga bermanfaat", tanpa tawaran bantuan yang tidak diminta.
 
 10. **Format mengikuti isi.** Jawaban pendek tidak butuh judul, butir, atau huruf tebal di setiap baris. Emoji bukan hiasan.
+
+11. **Tanpa em dash.** Em dash (—) dilarang total, tanpa pengecualian. Larangan ini juga berlaku untuk tanda pisah pendek (–) dan dua strip (--) yang dipakai sebagai jeda. Ganti dengan koma, titik, titik dua, atau tanda kurung. Rentang angka ditulis dengan tanda hubung biasa (1-10) atau kata "sampai". Lihat [references/struktur.md](references/struktur.md).
 
 ## Cek Cepat
 
@@ -52,10 +54,11 @@ Sebelum tulisan dikirim:
 - Tiga kalimat berturut-turut sama panjang? Pecah atau gabung satu.
 - Semua daftar berisi tiga butir? Ubah salah satunya.
 - Penutup berisi ringkasan, nasihat, atau tawaran? Hapus.
+- Cari karakter — dan –, juga -- yang dipakai sebagai jeda. Kalau ketemu satu saja, tulis ulang kalimatnya.
 
 ## Penilaian
 
-Beri nilai 1–10 untuk tiap aspek:
+Beri nilai 1-10 untuk tiap aspek:
 
 | Aspek | Pertanyaan |
 |-------|-----------|

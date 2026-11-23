@@ -18,7 +18,7 @@
 > "Pertanyaan yang bagus! Berikut adalah penjelasan mengenai cara mengganti oli motor. Mengganti oli secara rutin merupakan hal yang sangat penting untuk menjaga performa mesin. ... Semoga bermanfaat, dan jangan ragu untuk bertanya lagi!"
 
 **Sesudah:**
-> "Ganti oli motor setiap 2.000–3.000 km. ..."
+> "Ganti oli motor setiap 2.000-3.000 km. ..."
 
 **Perubahan:** Pujian, "berikut adalah", kalimat kabur tentang pentingnya oli, dan penutup dibuang. Kalimat pertama langsung berisi jawaban.
 
@@ -96,3 +96,15 @@
 > "Tim IT kami salah mengirim data pelanggan."
 
 **Perubahan:** Pasif yang wajar dibiarkan. Pasif yang menyembunyikan pihak yang bertanggung jawab diganti aktif.
+
+---
+
+## Contoh 9: Em Dash
+
+**Sebelum:**
+> "Hasilnya cepat — dan murah. Satu kendalanya — biaya awal — masih tinggi."
+
+**Sesudah:**
+> "Hasilnya cepat dan murah. Satu kendalanya: biaya awal masih tinggi."
+
+**Perubahan:** Semua em dash dibuang. Jeda dramatis cukup dihapus, sisipan diganti titik dua.
