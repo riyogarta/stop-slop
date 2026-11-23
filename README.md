@@ -1,68 +1,45 @@
-# Stop Slop
+# Stop Slop (Bahasa Indonesia)
 
-A skill for removing AI tells from prose.
+> Fork dari [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) karya Hardik Pandya.
+> Fork ini menambahkan adaptasi bahasa Indonesia di folder `id/`. Versi bahasa Inggris asli
+> tetap ada di root repo tanpa perubahan.
 
-<img width="3840" height="2160" alt="G-Yg4RVbIAAhVxW" src="https://github.com/user-attachments/assets/902afc15-1f40-4a9d-af24-8cd67afb8ebf" />
+*Indonesian adaptation of stop-slop. The original English skill is kept unchanged at the repo root.*
 
-## What this is
+Skill untuk membuang pola tulisan AI dari prosa berbahasa Indonesia.
 
-AI writing has patterns. Predictable phrases, structures, rhythms. This skill teaches Claude (or any LLM) to catch and remove them.
-
-## Skill Structure
+## Isi
 
 ```
-stop-slop/
-├── SKILL.md              # Core instructions
-├── references/
-│   ├── phrases.md        # Phrases to remove
-│   ├── structures.md     # Structural patterns to avoid
-│   └── examples.md       # Before/after transformations
-├── README.md
-└── LICENSE
+id/
+├── SKILL.md              # Aturan inti dan cek cepat
+└── references/
+    ├── frasa.md          # Frasa yang dibuang
+    ├── struktur.md       # Struktur kalimat yang dihindari
+    └── contoh.md         # Contoh sebelum/sesudah
 ```
 
-## Quick start
+## Cara pakai
 
-**Claude Code:** Add this folder as a skill.
+**Claude Code:** pasang folder `id/` sebagai skill.
 
-**Claude Projects:** Upload `SKILL.md` and reference files to project knowledge.
+**Claude Projects:** unggah `id/SKILL.md` dan isi `id/references/` ke project knowledge.
 
-**Custom instructions:** Copy core rules from `SKILL.md`.
+**System prompt / custom instructions:** tempel isi `id/SKILL.md`.
 
-**API calls:** Include `SKILL.md` in your system prompt. Reference files load on demand.
+## Beda dari versi asli
 
-## What it catches
+- Ditambah pola bahasa terjemahan: "di mana", "yang mana", "melakukan pengecekan", "adalah merupakan".
+- Ditambah pembuka dan penutup khas asisten, jargon, istilah Inggris, serta aturan format.
+- Kalimat pasif tidak dilarang, karena pasif di- adalah bentuk wajar bahasa Indonesia.
+- Larangan semua kata keterangan diganti larangan kata pengisi.
+- Larangan kalimat berawalan What/Why/How dihapus; padanannya, pola "Yang ... adalah ...", masuk ke struktur.
 
-**Banned phrases** - Throat-clearing openers, emphasis crutches, business jargon, all adverbs, vague declaratives, meta-commentary. See `references/phrases.md`.
+## Kredit
 
-**Structural clichés** - Binary contrasts, negative listings, dramatic fragmentation, rhetorical setups, false agency, narrator-from-a-distance voice, passive voice. See `references/structures.md`.
+- Versi asli: [Hardik Pandya](https://hvpandya.com), [stop-slop](https://github.com/hardikpandya/stop-slop)
+- Adaptasi bahasa Indonesia: [Riyogarta Pratikto](https://github.com/riyogarta)
 
-**Sentence-level rules** - No Wh- sentence starters, no em dashes, no staccato fragmentation, no lazy extremes, active voice required.
+## Lisensi
 
-## Scoring
-
-Rate 1-10 on each dimension:
-
-| Dimension | Question |
-|-----------|----------|
-| Directness | Statements or announcements? |
-| Rhythm | Varied or metronomic? |
-| Trust | Respects reader intelligence? |
-| Authenticity | Sounds human? |
-| Density | Anything cuttable? |
-
-Below 35/50: revise.
-
-## Bahasa Indonesia
-
-Indonesian adaptation lives in [`id/`](id/SKILL.md). It is not a literal translation: it adds patterns specific to AI-written Indonesian (translationese such as "di mana" / "yang mana", "melakukan pengecekan"), relaxes the passive-voice ban (the di- passive is normal Indonesian), and drops the Wh- starter rule.
-
-Versi bahasa Indonesia ada di folder [`id/`](id/SKILL.md). Pasang folder itu sebagai skill, atau tempel isi `id/SKILL.md` ke system prompt.
-
-## Author
-
-[Hardik Pandya](https://hvpandya.com)
-
-## License
-
-MIT. Use freely, share widely.
+MIT, mengikuti versi asli. Lihat [LICENSE](LICENSE).
