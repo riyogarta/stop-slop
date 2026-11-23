@@ -1,31 +1,62 @@
 # Stop Slop (Bahasa Indonesia)
 
 > Fork dari [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) karya Hardik Pandya.
-> Fork ini menambahkan adaptasi bahasa Indonesia di folder `id/`. Versi bahasa Inggris asli
-> tetap ada di root repo tanpa perubahan.
+> Fork ini menambahkan adaptasi bahasa Indonesia yang dikemas sebagai plugin Claude di folder
+> `plugins/stop-slop-id/`. Versi bahasa Inggris asli tetap ada di root repo tanpa perubahan.
 
-*Indonesian adaptation of stop-slop. The original English skill is kept unchanged at the repo root.*
+*Indonesian adaptation of stop-slop, packaged as a Claude plugin. The original English skill is kept unchanged at the repo root.*
 
 Skill untuk membuang pola tulisan AI dari prosa berbahasa Indonesia.
+
+## Pasang
+
+Plugin dan skill membutuhkan **Create and edit files** (dulu bernama *Code execution and file creation*) dalam keadaan aktif di **Settings > Capabilities**.
+
+### Claude.ai dan aplikasi desktop
+
+**Cara 1: langsung dari GitHub**
+
+1. Buka **Customize > Plugins**.
+2. Klik **Add > Add marketplace**, isi `riyogarta/stop-slop`.
+3. Pilih plugin **stop-slop-id**, lalu klik **Add**.
+
+**Cara 2: unggah zip**
+
+1. Unduh [stop-slop-id-plugin.zip](https://github.com/riyogarta/stop-slop/releases/latest/download/stop-slop-id-plugin.zip).
+2. Buka **Customize > Plugins**, klik **Add > Upload plugin**, lalu pilih file tadi.
+
+Jangan unggah zip dari tombol **Code > Download ZIP** di GitHub. Zip itu berisi dua `SKILL.md` (Inggris dan Indonesia) sehingga ditolak.
+
+### Claude Code
+
+```
+/plugin marketplace add riyogarta/stop-slop
+/plugin install stop-slop-id@stop-slop-id
+```
+
+### Alat lain
+
+Untuk system prompt atau alat lain yang mengikuti standar Agent Skills, pakai isi
+[`SKILL.md`](plugins/stop-slop-id/skills/stop-slop-id/SKILL.md). Versi skill saja (tanpa kemasan plugin) tersedia di
+[Releases](https://github.com/riyogarta/stop-slop/releases/latest) sebagai `stop-slop-id.zip`.
+
+## Cara pakai
+
+Minta Claude menulis atau menyunting teks bahasa Indonesia, dan skill ini dipakai otomatis. Untuk memanggilnya sendiri, ketik `/` di kotak pesan lalu pilih `stop-slop-id`.
 
 ## Isi
 
 ```
-id/
-├── SKILL.md              # Aturan inti dan cek cepat
-└── references/
-    ├── frasa.md          # Frasa yang dibuang
-    ├── struktur.md       # Struktur kalimat yang dihindari
-    └── contoh.md         # Contoh sebelum/sesudah
+.claude-plugin/marketplace.json        # katalog marketplace
+plugins/stop-slop-id/
+├── .claude-plugin/plugin.json         # manifest plugin
+└── skills/stop-slop-id/
+    ├── SKILL.md                       # aturan inti dan cek cepat
+    └── references/
+        ├── frasa.md                   # frasa yang dibuang
+        ├── struktur.md                # struktur kalimat yang dihindari
+        └── contoh.md                  # contoh sebelum/sesudah
 ```
-
-## Cara pakai
-
-**Claude Code:** pasang folder `id/` sebagai skill.
-
-**Claude Projects:** unggah `id/SKILL.md` dan isi `id/references/` ke project knowledge.
-
-**System prompt / custom instructions:** tempel isi `id/SKILL.md`.
 
 ## Beda dari versi asli
 

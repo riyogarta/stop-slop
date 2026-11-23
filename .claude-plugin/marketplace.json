@@ -1,0 +1,15 @@
+{
+  "name": "stop-slop-id",
+  "description": "Stop Slop versi bahasa Indonesia",
+  "owner": {
+    "name": "Riyogarta Pratikto",
+    "url": "https://github.com/riyogarta"
+  },
+  "plugins": [
+    {
+      "name": "stop-slop-id",
+      "source": "./plugins/stop-slop-id",
+      "description": "Membuang pola tulisan AI dari prosa berbahasa Indonesia. Adaptasi dari stop-slop karya Hardik Pandya."
+    }
+  ]
+}
