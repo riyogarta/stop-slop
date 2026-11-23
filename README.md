@@ -1,44 +1,42 @@
 # Stop Slop (Bahasa Indonesia)
 
 > Fork dari [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) karya Hardik Pandya.
-> Fork ini menambahkan adaptasi bahasa Indonesia yang dikemas sebagai plugin Claude di folder
-> `plugins/stop-slop-id/`. Versi bahasa Inggris asli tetap ada di root repo tanpa perubahan.
+> Fork ini menambahkan adaptasi bahasa Indonesia sebagai plugin Claude di folder `plugins/stop-slop-id/`.
+> Versi bahasa Inggris asli tetap ada di root repo tanpa perubahan.
 
 *Indonesian adaptation of stop-slop, packaged as a Claude plugin. The original English skill is kept unchanged at the repo root.*
 
 Skill untuk membuang pola tulisan AI dari prosa berbahasa Indonesia.
 
-## Pasang
+## Cara pasang
 
-Plugin dan skill membutuhkan **Create and edit files** (dulu bernama *Code execution and file creation*) dalam keadaan aktif di **Settings > Capabilities**.
+### Claude.ai atau aplikasi desktop (disarankan)
 
-### Claude.ai dan aplikasi desktop
+1. Buka **Customize > Plugins**
+2. Pilih **Add > Add marketplace**, isi `riyogarta/stop-slop`
+3. Pasang plugin **stop-slop-id**
 
-**Cara 1: langsung dari GitHub**
+Cara ini membuat plugin ikut terbarui saat repo ini diperbarui.
 
-1. Buka **Customize > Plugins**.
-2. Klik **Add > Add marketplace**, isi `riyogarta/stop-slop`.
-3. Pilih plugin **stop-slop-id**, lalu klik **Add**.
+### Unggah manual
 
-**Cara 2: unggah zip**
+Unduh dari halaman [Releases](https://github.com/riyogarta/stop-slop/releases/latest):
 
-1. Unduh [stop-slop-id-plugin.zip](https://github.com/riyogarta/stop-slop/releases/latest/download/stop-slop-id-plugin.zip).
-2. Buka **Customize > Plugins**, klik **Add > Upload plugin**, lalu pilih file tadi.
+- [`stop-slop-id-plugin.zip`](https://github.com/riyogarta/stop-slop/releases/latest/download/stop-slop-id-plugin.zip): unggah lewat **Customize > Plugins > Add > Upload plugin**
+- [`stop-slop-id.zip`](https://github.com/riyogarta/stop-slop/releases/latest/download/stop-slop-id.zip): unggah lewat **Customize > Skills > + > Upload a skill**
 
-Jangan unggah zip dari tombol **Code > Download ZIP** di GitHub. Zip itu berisi dua `SKILL.md` (Inggris dan Indonesia) sehingga ditolak.
+Jangan unggah zip dari tombol **Code > Download ZIP**. Isinya dua `SKILL.md` (Inggris dan Indonesia), jadi akan ditolak.
 
 ### Claude Code
 
 ```
 /plugin marketplace add riyogarta/stop-slop
-/plugin install stop-slop-id@stop-slop-id
+/plugin install stop-slop-id@riyogarta
 ```
 
-### Alat lain
+### System prompt atau custom instructions
 
-Untuk system prompt atau alat lain yang mengikuti standar Agent Skills, pakai isi
-[`SKILL.md`](plugins/stop-slop-id/skills/stop-slop-id/SKILL.md). Versi skill saja (tanpa kemasan plugin) tersedia di
-[Releases](https://github.com/riyogarta/stop-slop/releases/latest) sebagai `stop-slop-id.zip`.
+Tempel isi [`plugins/stop-slop-id/skills/stop-slop-id/SKILL.md`](plugins/stop-slop-id/skills/stop-slop-id/SKILL.md).
 
 ## Cara pakai
 
@@ -47,7 +45,7 @@ Minta Claude menulis atau menyunting teks bahasa Indonesia, dan skill ini dipaka
 ## Isi
 
 ```
-.claude-plugin/marketplace.json        # katalog marketplace
+.claude-plugin/marketplace.json        # katalog plugin
 plugins/stop-slop-id/
 ├── .claude-plugin/plugin.json         # manifest plugin
 └── skills/stop-slop-id/

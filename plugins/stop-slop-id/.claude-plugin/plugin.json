@@ -1,7 +1,6 @@
 {
   "name": "stop-slop-id",
   "displayName": "Stop Slop (Bahasa Indonesia)",
-  "version": "1.0.0",
   "description": "Membuang pola tulisan AI dari prosa berbahasa Indonesia. Adaptasi dari stop-slop karya Hardik Pandya.",
   "author": {
     "name": "Riyogarta Pratikto",
