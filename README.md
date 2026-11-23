@@ -6,7 +6,7 @@
 
 *Indonesian adaptation of stop-slop, packaged as a Claude plugin. The original English skill is kept unchanged at the repo root.*
 
-Skill untuk membuang pola tulisan AI dari prosa berbahasa Indonesia.
+Skill untuk membuang pola tulisan AI dari prosa berbahasa Indonesia. Formatnya `SKILL.md` standar, jadi bisa dipakai di Claude, ChatGPT, dan Gemini.
 
 ## Cara pasang
 
@@ -18,7 +18,7 @@ Skill untuk membuang pola tulisan AI dari prosa berbahasa Indonesia.
 
 Cara ini membuat plugin ikut terbarui saat repo ini diperbarui.
 
-### Unggah manual
+### Unggah manual ke Claude
 
 Unduh dari halaman [Releases](https://github.com/riyogarta/stop-slop/releases/latest):
 
@@ -34,13 +34,38 @@ Jangan unggah zip dari tombol **Code > Download ZIP**. Isinya dua `SKILL.md` (In
 /plugin install stop-slop-id@riyogarta
 ```
 
+### ChatGPT
+
+Skills di ChatGPT tersedia untuk akun Business, Enterprise, Healthcare, dan Edu.
+
+1. Unduh [`stop-slop-id.zip`](https://github.com/riyogarta/stop-slop/releases/latest/download/stop-slop-id.zip)
+2. Di sidebar, pilih **Plugins**, lalu buka tab **Skills**
+3. Pilih **Create > Upload from your computer**, lalu pilih zip tadi
+
+ChatGPT memindai skill yang diunggah. Kalau ditandai **Needs Review**, periksa dulu sebelum dipakai.
+
+### Gemini
+
+Skills di Gemini tersedia untuk akun Google pribadi usia 18 tahun ke atas. Akun Workspace menyusul. Unggah skill hanya bisa di [gemini.google.com](https://gemini.google.com) atau aplikasi Gemini di Mac.
+
+1. Unduh [`stop-slop-id.zip`](https://github.com/riyogarta/stop-slop/releases/latest/download/stop-slop-id.zip), lalu ekstrak. Hasilnya folder `stop-slop-id`.
+2. Buka **Customize > Skills** di sidebar. Kalau "Customize" tidak terlihat, klik **More** dulu.
+3. Unggah folder `stop-slop-id`. Nama folder harus sama dengan nama skill, jadi jangan diganti.
+
 ### System prompt atau custom instructions
 
 Tempel isi [`plugins/stop-slop-id/skills/stop-slop-id/SKILL.md`](plugins/stop-slop-id/skills/stop-slop-id/SKILL.md).
 
 ## Cara pakai
 
-Minta Claude menulis atau menyunting teks bahasa Indonesia, dan skill ini dipakai otomatis. Untuk memanggilnya sendiri, ketik `/` di kotak pesan lalu pilih `stop-slop-id`.
+Minta asisten menulis atau menyunting teks bahasa Indonesia, dan skill ini dipakai otomatis. Untuk memanggilnya sendiri:
+
+| Platform | Cara panggil |
+|---|---|
+| Claude | ketik `/` lalu pilih `stop-slop-id` |
+| Claude Code | `/stop-slop-id:stop-slop-id` |
+| ChatGPT | `@stop-slop-id` |
+| Gemini | `/stop-slop-id` |
 
 ## Isi
 
